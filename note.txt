@@ -1,0 +1,53 @@
+I/ Used library:
+- Pinia, tailwind css, vite, vue 3
+- pinia-plugin-persistedstate
+https://github.com/prazdevs/pinia-plugin-persistedstate
+
+- uniqolor
+https://github.com/dastoori/uniqolor
+
+- vue-material-design-icons
+https://github.com/robcresswell/vue-material-design-icons
+
+
+II/ Folder Structure
+1. Public: songs (mp3 files) + images (album covers + spotify icons)
+2. Src: 
+- router:
++ index.js: home, library, search
+
+- stores:
++ song.js
+
+- views:
++ HomeView.vue
++ Library.vue
++ SearchView.vue
+
+- components:
++ CategorySelect
++ HomeCard
++ MenuItem
++ MusicPlayer
++ MusicPlayerVolume
++ SongRow
+
+3. App.vue
+4. artist.json: object contains album songs info
+5. main.js: app.mount
+
+------------------------------------------------
+04/12/2023
+1. Create router file
+- Improvement:
++ use lazy load route
+
+2. main.ts
+- Create app instance & pinia instance
+- Import main.css
+- Register plugin and mount
+
+3. main.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
