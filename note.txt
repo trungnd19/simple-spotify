@@ -50,4 +50,62 @@ II/ Folder Structure
 3. main.css
 @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;
+
+4. HomeCard.vue (component)
+- Vue:
++ toRefs để destructuring props
+
+- Tailwind:
++ background color:
+bg-[#111111], hover:bg-[#111111]
++ border radius:
+rounded-md
++ font weight
+font-semibold
++ font size
+text-[14px]
++ text color
+text-white
+
+5. HomeView.vue (view)
++ text-2xl: font size + line height
++ hover:underline
++ py-1.5
++ flex items-center
++ md:block hidden => media queries, when md => display block and hidden
+
+
+6. CategorySelect.vue (component)
+- 1 item gồm: background color + text + ảnh nghiêng
+- Parent div:
++ contrast-[2] 
++ brightness-[0.87] 
++ aspect-square: create square ratio shape 
++ relative: position relative
++ overflow-hidden: hide part of element if overflown
+
+- Ảnh con:
++ absolute: position absolute
++ bottom-0
+-right-3.5: âm 3.5
+right-3.5: dương 3.5
++ max-w-[100px]: max-width
++ rotate-[20deg]: nghiêng bao nhiêu độ
+
+
+7. SearchView (view)
+- Grid with tailwind
+grid-cols-1	grid-template-columns: repeat(1, minmax(0, 1fr));
+
+grid 
+xl:grid-cols-5 
+lg:grid-cols-4 
+md:grid-cols-3 
+sm:grid-cols-2 
+gap-6
+
+
+***Brightness vs Contrast
+Brightness increases the overall lightness of the image—for example, making dark colors lighter and light colors whiter—while contrast adjusts the difference between the darkest and lightest colors.
+ 
